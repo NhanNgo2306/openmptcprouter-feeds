@@ -23,9 +23,9 @@ jobs:
   build:
     strategy:
       matrix:
-        OMR_TARGET: [x86_64]
-        OMR_KERNEL: [6.6]
-    runs-on: self-hosted
+        OMR_TARGET: [rpi4]
+        OMR_KERNEL: [5.4]
+    runs-on: ubuntu-latest
     continue-on-error: true
 
     steps:
